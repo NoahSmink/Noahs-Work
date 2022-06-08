@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Naamloos document</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>  
+
+    <!--MobileMENU-->
+    <script src="script.js"></script>
+
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+    <a href="index.html" class="active"></a>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+        <a href="info.html">Info</a>
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+    </div>
+
+    <a href="index.html"><img class="logo-img" src="img/Logo.png"></a>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a class="borderless" href="info.html">Over mij</a></li>
+        </ul>
+    </nav>
+    
+<div class="cursor cursor-none"></div>
+<script>
+    const cursor = document.querySelector('.cursor');
+    document.addEventListener('mousemove', (e) => {
+        cursor.style.left = e.pageX + 'px';
+        cursor.style.top = e.pageY + 'px';
+    })
+</script>
+
+
+
+    <div class="contact-gegevens">
+        <h2>Instagram</h2>
+        <h1>noah.smink</h1>
+        <h2>LinkedIn</h2>
+        <h1>/noah-smink-563b74233/</h1>
+        <h2>E-mail</h2>
+        <h1>noah.smink.business@gmail.com</h1>
+    </div>   
+    
+    <footer>
+        <div class="footer1">
+            <h4>Volg mij</h4>
+            <a href="https://www.instagram.com/noah.smink/"><p>Instagram: noah.smink</p></a>
+            <a href="https://www.facebook.com/profile.php?id=100014085936069"><p>Facebook: noah.smink</p></a>
+            <a href="https://www.linkedin.com/in/noah-smink-563b74233/"><p>LinkedIn: /noah-smink-563b74233/</p></a>
+        </div>
+        <div class="footer2">
+            <h4>Contact me</h4>
+            <a href="https://mail.google.com/mail/u/1/#inbox"><p>E-mail: noah.smink.business@gmail.com</p></a>
+            <a href="#"><p>Phone: +31 6 17376048</p></a>
+        </div>
+        <div class="footer3">
+            <h4>Over mij</h4>
+            <a href="info.html"><p>Klik hier</p></a>
+        </div>
+    </footer>
+
+</body>
+</html>
