@@ -1,0 +1,1401 @@
+	/* CSS reset, dit niet aanpassen! */
+
+    html {
+        box-sizing: border-box;
+      }
+      *, *:before, *:after {
+        box-sizing: inherit;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+          font-family: 'Poppins', sans-serif;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      
+      /* Hieronder mag je eigen CSS code */
+
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: left;
+    border-top: solid 1px white;
+    border-bottom: solid 1px white;
+    margin-top: 60px;
+}
+
+h4{
+    font-size: 20px;
+}
+
+footer p{
+    font-size: 16px;
+}
+
+.footer1{
+    grid-column: 1 / 2;
+    border-right: solid 1px white;
+    padding: 0px 40px 0px 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.footer1 p:hover{
+    color: #ffffff75;
+}
+
+.footer2 p:hover{
+    color: #ffffff75;
+}
+
+.footer3 p:hover{
+    color: #ffffff75;
+}
+
+.footer2{
+    grid-column: 2 / 3;
+    border-right: solid 1px white;
+    padding: 0px 40px 0px 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.footer3{
+    grid-column: 3 / 4;
+    padding: 0px 40px 0px 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+body{
+    background-color: rgb(15, 13, 13);
+    width: 1fr;
+    height: auto;
+    color: white;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h2{
+    font-size: 22px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.header-tekst p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 18px;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        margin-top: 100px;
+    }
+
+    to{
+        opacity: 1;
+        margin-top: 40px;
+    }
+}
+
+.noahs-image{
+    grid-column: 2 / 2;
+    background: url(/img/Zakelijk\ -\ Handen\ in\ Zakken2.png);
+    background-size: 83%;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    transform-origin: center bottom;   
+    background-color: none;
+}
+
+.header-rij{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    margin-top: 40px;
+    width: 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 560px;
+    margin-bottom: 60px;
+    animation: fadeIn 4s;
+}
+
+.header-tekst{
+    grid-column: 1 / 2;
+    padding-top: 120px;
+    padding-right: 80px;
+    border-right: solid 1px white;
+}
+
+header{
+    text-align: right;
+    float: left;
+}
+
+.header-tekst h2 {
+    text-align: right;
+}
+
+.logo-img{
+    width: 20%;
+    height: auto;
+    float: left;
+    margin-left: 30px;
+}
+
+a{
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: none;
+    display: inline;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 19px 68px;
+    text-decoration: none;
+    border-right: 1px solid white;
+  }
+
+.borderless {
+    border: none;
+  }
+  
+  li a:hover {
+    background-color: black;
+  }
+
+  nav{
+      display: flex;
+      justify-content: space-around;
+  }
+
+  .cursorr{
+      position: fixed;
+      width: 30px;
+      height: 30px;
+      border: solid 1px white;
+      transition: 0s;
+      transform: translate(-50%, -50%);
+  }
+
+  .portfolio-container{
+      height: auto;
+      width: 100%;
+      clear: both;
+      display: grid;
+      grid-template-columns: 1fr;
+      text-align: center;
+  }
+
+.lijntje{
+    background-color: white;
+    width: 90%;
+    height: 1px;
+    clear: both;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes fadeIn1{
+    from{
+        opacity: 0;
+        margin-top: 60px;
+    }
+
+    to{
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
+ .my-projects-container{
+     width: 40%;
+     height: auto;
+     grid-column: 1 / 2;
+     margin: 0 auto;
+     padding: 10px;
+     display: grid;
+     grid-template-rows: 10vh 80vh;
+     animation: fadeIn1 4s;
+  }
+
+  .nothing{
+      background-color: red;
+  }
+
+  .projects{
+      text-align: left;
+      padding-left: 60px;
+  }
+
+  .projects h1{
+    font-size: 48px;
+  }
+
+  .my-projects{
+    background: url(/img/LEGO_The_Rock.jpg);
+    background-size: 100%;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    filter: blur(2px);
+    grid-row: 2 / 2;
+    border: solid 1px white;
+  }
+
+  .my-projects-container:hover{
+      opacity: 40%;
+  }
+
+.school-projects-container{
+    width: 80%;
+    height: auto;
+    grid-column: 3 / 3;
+    margin: 0 auto;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 10vh 80vh;
+}
+
+.my-projects-container h1{
+    font-size: 32px;
+}
+
+.school-projects-container h1{
+    font-size: 32px;
+}
+
+.the-rock-image{
+    background: url(/img/design_book.png);
+    background-size: 120%;
+    filter: blur(2px);
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat; 
+    grid-row: 2 / 2;
+    border: solid 1px white;
+}
+
+a:-webkit-any-link {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.school-projects-container:hover{
+    opacity: 40%;
+}
+
+.lijntje1{
+    width: 1px;
+    height: 490px;
+    background-color: white;
+    margin: auto;
+}
+
+.portfolio-container h1{
+    margin-bottom: 40px;
+}
+
+.the-rock-image{
+    width: 100%;
+}
+
+
+@keyframes fadeIn2{
+    from{
+        opacity: 0;
+        margin-top: 200px;
+    }
+
+    to{
+        opacity: 1;
+        margin-top: 140px;
+    }
+}
+
+.contact-gegevens{
+    width: 60vw;
+    text-align: center;
+    margin: auto;
+    margin-top: 140px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-left: solid 1px white;
+    border-right: solid 1px white;
+    animation: fadeIn2 4s;
+}
+
+.contact-gegevens h1, h2{
+    grid-column: 2 / 3;
+    text-align: left;
+}
+
+.contact-gegevens h1{
+    font-size: 40px;
+}
+
+.contact-gegevens h2{
+    font-size: 22px;
+    text-align: left;
+    font-style: normal;
+    display: block;
+    margin-block-start: 0.8em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+}
+
+
+
+
+
+@keyframes fadeIn3{
+    from{
+        opacity: 0;
+        margin-top: 160px;
+    }
+
+    to{
+        opacity: 1;
+        margin-top: 100px;
+    }
+}
+
+.container{
+    height: 450px;
+    padding-left: 20px;
+    margin-top: 100px;
+    width: 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 60px;
+    animation: fadeIn3 4s;
+}
+
+.container-tekst{
+    text-align: left;
+    grid-column: 2 / 4;
+    padding: 0px 40px 0px 40px;
+}
+
+.container-tekst h2 {
+    text-align: left;
+}
+
+.noahs-image-info{
+    grid-column: 1 / 2;
+    background: url(/img/Zakelijk\ -\ Handen\ in\ Zakken3.png);
+    background-size: 90%;
+    background-position-x: center;
+    background-repeat: no-repeat;   
+    border-right: solid 1px white;
+    margin-right: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.test-container{
+    position: relative;
+    width: 400px;
+    clear: both;
+}
+
+.image__img{
+    background-image: url(/img/LEGO_The_Rock.jpg);
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 83%;
+    display: block;
+}
+
+.image__overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.image__overlay > * {
+    transform: translateX(20px);
+    transition: transform 0.25s;
+}
+
+.image__overlay:hover{
+    opacity: 1;
+    border: solid 1px white;
+}
+
+.image__overlay__blur{
+    backdrop-filter: blur(3px);
+}
+
+.image__overlay:hover > * {
+    transform: translateX(0px);
+}
+
+.image__title{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.image__description{
+    font-size: 1.25em;
+    margin-top: 0.25em;
+}
+
+
+
+
+
+.portfolio-container1{
+    height: auto;
+    width: 100%;
+    clear: both;
+    display: grid;
+    grid-template-columns: 1fr 10vw 1fr;
+    text-align: center;
+}
+
+.my-projects-container1{
+   width: 80%;
+   height: auto;
+   grid-column: 1 / 2;
+   margin: 0 auto;
+   padding: 10px;
+   display: grid;
+   grid-template-rows: 10vh 80vh;
+}
+
+
+.my-projects1{
+  background: url(/img/LEGO_The_Rock.jpg);
+  background-size: 83%;
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat; 
+  grid-row: 2 / 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes fadeIn4{
+    from{
+        opacity: 0;
+        margin-top: 110px;
+    }
+
+    to{
+        opacity: 1;
+        margin-top: 50px;
+    }
+}
+
+.personal-row-1{
+    width: 100%;
+    height: 600px;
+    grid-template-columns: 50% 50%;
+    display: grid;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: solid 1px white;
+    animation: fadeIn4 4s;
+}
+
+.text-left-1{
+    grid-column: 1 / 2;
+    padding: 0px 30px 0px 30px;
+    text-align: right;
+    padding-top: 160px;
+}
+
+.text-left-1 h2{
+    text-align: right;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-style: normal;
+}
+
+.text-left-1 h3{
+    font-size: 36px;
+    font-family: 'Ubuntu', sans-serif;
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.photos-right-1{
+    grid-column: 2 / 3;
+    background-image: url(/img/TheRock3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    border-left: solid 1px white;
+}
+
+.personal-row-2{
+    width: 100%;
+    height: 600px;
+    grid-template-columns: 50% 50%;
+    display: grid;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: solid 1px white;
+    animation: fadeIn4 4s;
+}
+
+.text-right-2{
+    grid-column: 2 / 3;
+    padding: 0px 30px 0px 30px;
+    text-align: left;
+    padding-top: 160px;
+}
+
+.photos-left-2{
+    grid-column: 1 / 2;
+    background-image: url(/img/BiomesWorld.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    border-right: solid 1px white;
+}
+
+.text-right-2 h2{
+    text-align: left;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-style: normal;
+}
+
+.text-right-2 h3{
+    font-size: 36px;
+    font-family: 'Ubuntu', sans-serif;
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.personal-row-3{
+    width: 100%;
+    height: 600px;
+    grid-template-columns: 30% 70%;
+    display: grid;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: solid 1px white;
+    animation: fadeIn4 4s;
+}
+
+.text-left-3{
+    grid-column: 1 / 2;
+    padding: 0px 30px 0px 30px;
+    text-align: right;
+    padding-top: 160px;
+}
+
+.text-left-3 h2{
+    text-align: right;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-style: normal;
+}
+
+.text-left-3 h3{
+    font-size: 36px;
+    font-family: 'Ubuntu', sans-serif;
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.photos-right-3{
+    grid-column: 2 / 3;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-left: solid 1px white;
+    width: 100%;
+    margin: 0 auto;
+    height: 550px;
+    position: relative;
+}
+
+.video-portaal{
+    width: 80%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin: 0;
+    display: block;
+    align-items: center;
+}
+
+.personal-row-4{
+    width: 100%;
+    height: 600px;
+    grid-template-columns: 70% 30%;
+    display: grid;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: solid 1px white;
+    animation: fadeIn4 4s;
+}
+
+.text-right-4{
+    grid-column: 2 / 3;
+    padding: 0px 30px 0px 30px;
+    padding-top: 160px;
+}
+
+.text-right-4 h2{
+    text-align: left;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-style: normal;
+}
+
+.text-right-4 h3{
+    font-size: 36px;
+    font-family: 'Ubuntu', sans-serif;
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.photos-left-4{
+    grid-column: 1 / 2;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-right: solid 1px white;
+    width: 100%;
+    margin: 0 auto;
+    height: 550px;
+    position: relative;
+}
+
+.video-vuur{
+    width: 80%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin: 0;
+    display: block;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 426px){
+
+    .topnav {
+        overflow: none;
+        background-color: none;
+        position: none;
+      }
+      
+      /* Hide the links inside the navigation menu (except for logo/home) */
+      .topnav #myLinks {
+        display: none;
+      }
+      
+      /* Style navigation menu links */
+      .topnav a {
+        color: none;
+        padding: 0px;
+        text-decoration: none;
+        font-size: 0px;
+        display: none;
+      }
+      
+      /* Style the hamburger menu */
+      .topnav a.icon {
+        background: none;
+        position: none;
+        right: 0;
+        top: 0;
+      }
+      
+      /* Add a grey background color on mouse-over */
+      .topnav a:hover {
+        background-color:  none;
+        color: none;
+      }
+      
+      /* Style the active link (or home/logo) */
+      .active {
+        background-color: none;
+        color: none;
+      }
+}
+
+
+@media only screen and (max-width: 425px){
+    .logo-img{
+        width: 0px;
+        height: 0px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: none;
+        background-color: none;
+        display: none;
+      }
+      
+      li {
+        float: none;
+      }
+      
+      li a {
+        display: none;
+        color: none;
+        text-align: none;
+        padding: 0px;
+        text-decoration: none;
+        border-right: none;
+      }
+    
+    .borderless {
+        border: none;
+      }
+      
+      li a:hover {
+        background-color: none;
+      }
+    
+      nav{
+          display: none;
+          justify-content: none;
+          width: none;
+          height: none;
+      }
+    
+    .topnav {
+        overflow: hidden;
+        position: relative;
+      }
+      
+      /* Hide the links inside the navigation menu (except for logo/home) */
+      .topnav #myLinks {
+        display: none;
+      }
+      
+      /* Style navigation menu links */
+      .topnav a {
+        color: white;
+        border-bottom: solid 1px white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+      }
+      
+      /* Style the hamburger menu */
+      .topnav a.icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      
+      /* Add a grey background color on mouse-over */
+      .topnav a:hover {
+        color: white;
+        border-left: 1px solid white;
+      }
+      
+      /* Style the active link (or home/logo) */
+      .active {
+        color: white;
+        background-image: url(/img/Logo.png);
+        background-size: 40%;
+        background-repeat: no-repeat;
+        height: 50px;
+      }
+
+      .header-rij {
+        height: 260px;
+        grid-template-rows: 295px 200px;
+    }
+
+    .header-tekst {
+        grid-column: 1 / 2;
+        padding-top: 40px;
+        padding-right: 40px;
+        border-right: none;
+        text-align: left;
+    }
+
+    .header-tekst p {
+        font-size: 18px;
+    }
+
+    .header-tekst h2 {
+        text-align: left;
+        border-bottom: solid 1px white;
+        padding-bottom: 40px;
+    }
+
+    .portfolio-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px 400px 400px;
+        margin-top: 360px;
+    }
+
+    .my-projects-container {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .school-projects-container {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        margin: 0 auto;
+        padding: 10px;
+        display: grid;
+        grid-template-rows: 10vh 80vh;
+        height: auto;
+    }
+
+    .lijntje1 {
+        width: 1px;
+        height: 0px;
+        background-color: white;
+        margin: auto;
+    }
+
+    .the-rock-image {
+        height: 320px;
+    }
+
+    .projects {
+        padding-left: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1024px){
+    li a {
+        padding: 19px 40px;
+    }
+
+    .header-rij {
+        grid-template-columns: 50% 50%;
+    }
+    
+    .header-tekst {
+        grid-column: 1 / 2;
+        padding-top: 100px;
+        padding-right: 40px;
+    }
+
+    .header-tekst h1 {
+        font-size: 50px;
+    }
+
+    .noahs-image {
+        background-size: 110%;
+    }
+
+    .my-projects-container {
+        grid-template-rows: 8vh 55vh;
+    }
+
+    .school-projects-container {
+        grid-template-rows: 8vh 55vh;
+    }
+
+    .my-projects-container h1 {
+        font-size: 28px;
+    }
+
+    .my-projects-container {
+        font-size: 28px;
+    }
+
+    .lijntje1 {
+        height: 450px;
+    }
+
+    .contact-gegevens {
+        width: 74vw;
+    }
+
+    .contact-gegevens h2 {
+        font-size: 18px;
+    }
+
+    .contact-gegevens h1 {
+        font-size: 26px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .header-rij {
+        height: 460px;
+    }
+    
+    .header-tekst h1 {
+        font-size: 36px;
+    }
+
+    .header-tekst h2 {
+        font-size: 20px;
+    }
+
+    .projects h1 {
+        font-size: 30px;
+    }
+
+    .my-projects-container h1 {
+        font-size: 20px;
+    }
+
+    .school-projects-container h1 {
+        font-size: 20px;
+    }
+
+    .lijntje1 {
+        height: 200px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+
+    .personal-row-3 {
+        grid-template-columns: 40% 60%;
+        height: 400px;
+    }
+
+    .personal-row-4 {
+        grid-template-columns: 60% 40%;
+        height: 400px;
+    }
+
+    .personal-row-1 {
+        height: 400px;
+    }
+    
+    .personal-row-2 {
+        height: 400px;
+    }
+
+    .text-left-1 {
+        padding-top: 53px;
+    }
+
+    .text-left-3 {
+        padding-top: 53px;
+    }
+
+    .text-right-2{
+        padding-top: 53px;
+    }
+
+    .text-right-4{
+        padding-top: 53px;
+    }
+
+    .photos-right-3 {
+        height: 350px;
+    }
+
+    .photos-left-4 {
+        height: 350px;
+    }
+    
+}
+
+@media only screen and (max-width: 425px){
+    .header-rij {
+        grid-template-rows: 600px 200px;
+        grid-template-columns: 1fr;
+    }
+
+    .noahs-image{
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        background-size: 70%;
+    }
+
+    .header-tekst{
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+        margin-top: -400px;
+    }
+
+    .portfolio-container {
+        margin-top: 40px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px;
+        padding-top: 60px;
+    }
+
+    .my-projects-container{
+        grid-template-columns: 1fr;
+    }
+
+    .lijntje{
+        height: 0px;
+    }
+
+    h4 {
+        font-size: 14px;
+    }
+
+    footer p {
+        font-size: 10px;
+    }
+
+    .personal-row-1 {
+        grid-template-columns: 1fr;
+        grid-row: 200px 300px;
+        border-bottom: none;
+    }
+
+    .personal-row-2 {
+        grid-template-columns: 1fr;
+        grid-row: 200px 300px;
+        border-bottom: none;
+        margin-top: 160px;
+    }
+
+    .personal-row-3 {
+        grid-template-columns: 1fr;
+        grid-row: 200px 300px;
+        border-bottom: none;
+        margin-top: 100px;
+    }
+
+    .personal-row-4 {
+        grid-template-columns: 1fr;
+        grid-row: 200px 300px;
+        border-bottom: none;
+        margin-top: 75px;
+    }
+
+    .text-left-1{
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+        text-align: left;
+        margin-top: -50px;
+        border-bottom: solid 1px white;
+        padding-bottom: 40px;
+    }
+
+    .photos-right-1{
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        height: 300px;
+        border: none;
+        background-size: 40%;
+    }
+
+    .photos-left-2{
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        height: 300px;
+        border: none;
+        background-size: 40%;
+    }
+
+    .photos-right-3{
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        height: 300px;
+        border: none;
+        background-size: 40%;
+    }
+
+    .photos-left-4{
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        height: 300px;
+        border: none;
+        background-size: 40%;
+    }
+    
+
+    .text-left-1 h2 {
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-style: normal;
+        text-align: left;
+    }
+
+    .text-left-1 h3 {
+        font-size: 36px;
+        font-family: 'Ubuntu', sans-serif;
+        display: block;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    }
+
+    .text-right-2{
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+        text-align: left;
+        margin-top: -90px;
+        border-bottom: solid 1px white;
+        padding-bottom: 40px;
+    }
+
+    .text-right-2 h2 {
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-style: normal;
+        text-align: left;
+    }
+
+    .text-right-2 h3 {
+        font-size: 36px;
+        font-family: 'Ubuntu', sans-serif;
+        display: block;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    }
+
+    .text-left-3{
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+        text-align: left;
+        border-bottom: solid 1px white;
+        padding-bottom: 40px;
+        margin-top: -90px;
+    }
+
+    .text-left-3 h2 {
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-style: normal;
+        text-align: left;
+    }
+
+    .text-left-3 h3 {
+        font-size: 36px;
+        font-family: 'Ubuntu', sans-serif;
+        display: block;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    }
+
+    .text-right-4{
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+        text-align: left;
+        margin-top: -90px;
+        border-bottom: solid 1px white;
+        padding-bottom: 30px;
+    }
+
+    .text-right-4 h2 {
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-style: normal;
+        text-align: left;
+    }
+
+    .text-right-4 h3 {
+        font-size: 36px;
+        font-family: 'Ubuntu', sans-serif;
+        display: block;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    }
+
+    .contact-gegevens {
+        border-left: none;
+        border-right: none;
+        margin-top: 40px;
+    }
+
+    .contact-gegevens h1 {
+        font-size: 20px;
+    }
+
+    .contact-gegevens h2 {
+        font-size: 13px;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .noahs-image-info {
+        grid-column: none;
+        background: none;
+        background-size: none;
+        background-position-x: none;
+        background-repeat: no-repeat;
+        border-right: none;
+        margin-right: 0px;
+    }
+}
